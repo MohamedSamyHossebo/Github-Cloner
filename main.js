@@ -13,8 +13,6 @@ console.log(`\n======================================
     📅 Copyright © ${new Date().getFullYear()}
     ======================================\n`);
     
-// ...existing code...
-
 const getRepos = async (username) => {
     try {
         const options = {
@@ -31,8 +29,6 @@ const getRepos = async (username) => {
         return [];
     }
 };
-
-// ...existing code...
 
 const displayRepos = (repos) => {
     if (repos.length === 0) {
