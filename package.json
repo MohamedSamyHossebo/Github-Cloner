@@ -1,0 +1,23 @@
+{
+  "name": "github-cloner",
+  "version": "1.0.0",
+  "main": "main.js",
+  "bin": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pkg . --target node16-win-x64 --output github-cloner.exe",
+    "start": "node main.js"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "description": "A GitHub repository cloner",
+  "dependencies": {
+    "axios": "^1.8.3"
+  },
+  "pkg": {
+    "targets": ["node16-win-x64"],
+    "assets": [
+      "node_modules/axios/**"
+    ]
+  }
+}
